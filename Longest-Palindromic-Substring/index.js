@@ -1,6 +1,7 @@
 //5. Longest Palindromic Substring
 
 //In this case the code checks string is palindrome or not
+
 function longestPalindromicSubstring(input) {
     const str = input.toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -22,3 +23,4 @@ function longestPalindromicSubstring(input) {
 }
 
 console.log(longestPalindromicSubstring("abbaabba"))
+
