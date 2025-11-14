@@ -7,6 +7,7 @@ function isPalindrome(x) {
         x = Math.trunc(x / 10);
     }
     // For odd digit counts, drop the middle digit of rev (rev/10)
+
     return x === rev || x === Math.trunc(rev / 10);
 }
 
