@@ -16,6 +16,6 @@ var lengthOfLongestSubstring = function(s) {
 }
 
 // Examples:
-console.log(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
+//console.log(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
 console.log(lengthOfLongestSubstring("bbbbbbbb"));    // 1 ("b")
 console.log(lengthOfLongestSubstring("pwwkew"));   // 3 ("wke")
