@@ -10,7 +10,7 @@ const memoizedSum = memo(sum);
 // Test with primitives
 console.log(memoizedSum(1, 3, 2)); // Calculates
 
-//console.log(memoizedSum(1, 2, 3)); // From cache
+console.log(memoizedSum(1, 2, 3)); // From cache
 
 // Test with object arguments
 function describe(user) {
