@@ -52,4 +52,4 @@ const l1 = createList([2, 4, 3]);
 const l2 = createList([5, 6, 4]);
 
 const sum = addTwoNumbers(l1, l2);
-console.log(printList(sum));  // Output: [7, 0, 8]
+console.log(printList(sum));  // Output:-> [7, 0, 8]

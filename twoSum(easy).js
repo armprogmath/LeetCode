@@ -46,7 +46,7 @@ const nums = [0, 3,  2, 8, 11, 7, 15];
 const target = 10;
 
 const result = twoSum(nums, target);
-console.log("Result: ", result);
+//console.log("Result: ", result);
 
 //complement = 9 - 0 = 9
 

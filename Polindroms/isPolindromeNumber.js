@@ -11,5 +11,5 @@ function isPalindrome(x) {
     return x === rev || x === Math.trunc(rev / 10);
 }
 
-//console.log(isPalindrome(321))
-console.log(isPalindrome(654))
+console.log(isPalindrome(321))
+//console.log(isPalindrome(654))
