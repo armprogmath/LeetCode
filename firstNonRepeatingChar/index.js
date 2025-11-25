@@ -16,6 +16,7 @@ function firstNonRepeatingChar(str) {
     return null; // or '' if you prefer
 }
 
+//console.log(firstNonRepeatingChar("swissllpp")); // "w"
 console.log(firstNonRepeatingChar("swissllpp")); // "w"
 
 
