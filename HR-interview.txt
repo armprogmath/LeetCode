@@ -30,7 +30,7 @@ In one of my previous projects, we had a conflict between two backend developers
 
 6.How do you prioritize tasks?
 
-As a backend engineer, I prioritize tasks using a mix of business impact, system dependencies, and technical complexity. My approach looks like this:
+As a backend engineer, I prioritize tasks using a mix of business impact, system dependencies, and technical complexity. My approach looks like this
 
 If there are issues affecting uptime, API performance, security, or data integrity, those immediately become top priority. A stable backend is always more important than new features.
 
