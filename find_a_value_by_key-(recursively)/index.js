@@ -34,5 +34,5 @@ function findValueByKey(obj, keyToFind) {
 }
 
 // Example:
-console.log(findValueByKey(data, 'city')); // "Yerevan"
+//console.log(findValueByKey(data, 'city')); // "Yerevan"
 console.log(findValueByKey(data, 'zip'));  // 12345

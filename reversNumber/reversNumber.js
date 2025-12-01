@@ -20,7 +20,7 @@ function reverse(x) {
     return (rev < INT_MIN || rev > INT_MAX) ? 0 : rev;
 }
 
-//console.log(reverse(321))
+console.log(reverse(321))
 console.log(reverse(123))
 
 
