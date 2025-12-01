@@ -27,4 +27,5 @@ function changeToNextVowel(arr){
     return result
 }
 
+//console.log("Result: ", changeToNextVowel("Hellu World"))
 console.log("Result: ", changeToNextVowel("Hellu World"))
