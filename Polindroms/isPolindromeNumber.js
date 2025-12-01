@@ -12,4 +12,4 @@ function isPalindrome(x) {
 }
 
 console.log(isPalindrome(321))
-//console.log(isPalindrome(654))
+console.log(isPalindrome(654))
