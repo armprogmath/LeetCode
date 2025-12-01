@@ -19,5 +19,5 @@ function describe(user) {
 
 const memoizedDescribe = memo(describe);
 
-console.log(memoizedDescribe({ name: 'Alice', age: 30 })); // Calculates
+//console.log(memoizedDescribe({ name: 'Alice', age: 30 })); // Calculates
 console.log(memoizedDescribe({ age: 30, name: 'Alice' })); // From cache (thanks to stable stringify)
