@@ -191,7 +191,20 @@
 
   ===========================================================================
 
+6.Load Balancing — Short Senior-Level Explanation
 
+  “Load balancing distributes incoming traffic across multiple servers or service instances to improve performance,
+  availability, and fault tolerance. In Node.js, we typically use load balancers to overcome the single-threaded event
+  loop and scale horizontally across multiple processes or machines.”
+
+  ===========================================================================
+
+7. Fault Tolerance — Short Senior-Level Explanation
+
+   “Fault tolerance is the system’s ability to continue operating correctly even when some components fail.
+   In Node.js and distributed systems, it ensures high availability, reliability, and graceful degradation of services.”
+
+  ===========================================================================
 
 x.RabbitMQ vs Kafka — Short Senior-Level Explanation for Interview
   🔥 High-level difference
