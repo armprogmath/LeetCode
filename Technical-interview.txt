@@ -1,0 +1,157 @@
+1.Streams & Buffers — short answer
+
+  “A Buffer in Node.js is a raw binary data container stored outside the V8 heap.
+  It allows Node to efficiently handle bytes—files, network packets, images, etc.
+  Streams are an abstraction that process data piece-by-piece instead of loading everything into memory.
+  They support backpressure and come in four types: Readable, Writable, Duplex, and Transform.
+  Using streams with buffers lets Node handle large files, network traffic,
+  and real-time data efficiently without blocking the event loop.”
+
+  ===========================================================================
+
+  2.Memory Leak Causes — short answer
+
+    “Memory leaks in Node.js usually happen when objects stay referenced longer than needed.
+    The most common causes are: keeping large data in global variables, long-living caches without eviction (Redis or in-memory),
+    not removing event listeners, forgotten timers/intervals, unbounded arrays or Maps, closures holding references,
+    and not handling streams/backpressure causing buffers to grow. In production I monitor heap usage,
+    event-loop lag, and use tools like clinic, heap snapshots, and —inspect to detect leaks.”
+
+  ===========================================================================
+
+  3.Performance Optimization — short answer
+
+    “For performance optimization in Node.js, I focus on keeping the event loop free: avoid blocking operations,
+    offload CPU-heavy tasks to worker threads or queues, and use streaming instead of loading large data in memory.
+    I optimize database queries with proper indexing, caching strategies (Redis), pagination, and connection pooling.
+    I also use horizontal scaling, clustering, load balancing, and proper backpressure handling.
+    In production, I monitor event-loop delay, CPU, memory, slow queries,
+    and use profiling tools like Clinic and flamegraphs to find bottlenecks.”
+
+  ===========================================================================
+
+  4.Cluster Mode — short answer
+
+    “Cluster mode in Node.js allows you to take advantage of multi-core CPUs by creating multiple worker processes
+    that share the same server port.
+    Each worker runs its own event loop and memory space, so CPU-bound tasks can be distributed across cores.
+    The master process manages the workers, restarts them if they crash, and can balance load.
+    This is important because Node’s single-threaded event loop cannot fully utilize multiple CPU cores on its own.”
+
+  ===========================================================================
+
+  5.Async Patterns — short answer
+
+    “Node.js supports several asynchronous patterns to handle non-blocking operations. The main ones are:
+
+    1.Callbacks — the traditional approach, simple but can lead to ‘callback hell’ if nested.
+    2.Promises — provide a cleaner chainable syntax for async operations and better error handling.
+    3.Async/Await — built on promises, allows writing asynchronous code in a synchronous style, improving readability.
+    4.Event Emitters / Streams — for handling asynchronous events or streaming data.
+    5.Observables / Reactive patterns (RxJS) — for complex async data streams and composition.
+
+    Choosing the right pattern depends on readability, error handling, and control over concurrency,
+    especially in high-performance Node applications.”
+
+  ===========================================================================
+
+  6.Error Handling Design — short answer
+
+    “In Node.js, robust error handling is critical because unhandled errors can crash the process. Best practices include:
+
+    1.Centralized error handling — using middleware (Express/NestJS) to catch errors and return consistent responses.
+    2.Async errors — always handle promise rejections (.catch) or use try/catch with async/await.
+    3.Operational vs Programmer errors — operational errors (like network or DB failures) should be handled gracefully;
+      programmer errors (bugs) should fail fast.
+    4.Logging and monitoring — capture stack traces, context, and alerts using tools like Winston, Sentry, or Datadog.
+    5.Fail-safe design — validate inputs, use timeouts, circuit breakers, and retries for external services.
+
+    In production, I combine structured error classes, global exception filters (NestJS),
+    and logging/metrics to maintain reliability and observability.”
+
+  ===========================================================================
+
+  7.PostgreSQL Indexing — short answer
+
+    “Indexes in PostgreSQL are used to speed up data retrieval by avoiding full table scans. The common types are:
+
+   1. B-Tree — default, great for equality and range queries.
+   2. Hash — for equality checks, less commonly used.
+   3. GIN (Generalized Inverted Index) — for full-text search, JSONB, and array columns.
+   4. GiST — for geometric data types and full-text search.
+   5. BRIN — for very large, sequential datasets like time series.
+
+    As a senior engineer, I also consider:
+
+    -Index selectivity and cardinality.
+    -Partial indexes for filtering subsets of data.
+    -Covering indexes to include additional columns for faster queries.
+    -Avoid over-indexing, as inserts/updates become slower.
+
+    Proper indexing is critical for performance, query planning, and scaling high-traffic applications.”
+
+  ===========================================================================
+
+  8.Query Optimization — short answer
+
+    “Query optimization in PostgreSQL involves writing queries and designing schemas so the database can execute them
+    efficiently.
+    Key strategies include:
+
+    1. Use proper indexes — B-Tree, GIN, or BRIN depending on the query.
+    2. **Avoid SELECT *** — select only necessary columns.
+    3. Analyze query plans — use EXPLAIN or EXPLAIN ANALYZE to find bottlenecks.
+    4. Use JOINs and WHERE clauses efficiently — filter early and avoid unnecessary joins.
+    5. Batch inserts/updates — instead of row-by-row operations.
+    6. Leverage caching — Redis or in-memory caches for frequently accessed data.
+    7. Partitioning — for very large tables to reduce scan time.
+
+    In production, I combine indexing, query rewriting, caching, and monitoring to ensure high throughput and low
+    latency for PostgreSQL queries.”
+
+  ===========================================================================
+
+  9.Transactions — short answer
+
+    “A transaction is a sequence of database operations executed as a single unit of work.
+    PostgreSQL transactions ensure ACID properties — Atomicity, Consistency, Isolation, and Durability.
+    In Node.js, we use transactions via client libraries (like pg or TypeORM/NestJS) to wrap multiple queries so that
+    either all succeed or all roll back on failure.
+
+    Key points I emphasize as a senior engineer:
+
+    1. BEGIN, COMMIT, ROLLBACK — basic transaction control.
+    2. Isolation levels — READ COMMITTED, REPEATABLE READ, SERIALIZABLE to balance concurrency vs consistency.
+    3. Error handling — always rollback on failure to avoid partial updates.
+    4. Minimize transaction scope — keep them short to reduce locks and avoid blocking the event loop.
+    5. Use connection pooling carefully, ensuring transactions stay on the same client connection.
+
+    Proper transaction management prevents data corruption, ensures consistency, and is critical in financial
+    or multi-step operations.”
+
+  ===========================================================================
+
+  10.Isolation Levels — short answer
+
+     “PostgreSQL supports four main transaction isolation levels, which control visibility of data changes between
+     concurrent transactions:
+
+     1. Read Uncommitted — theoretically allows dirty reads, but in PostgreSQL it behaves like Read Committed.
+     2. Read Committed (default) — a transaction sees only data committed before each query; prevents dirty reads
+        but allows non-repeatable reads and phantom reads.
+     3. Repeatable Read — a transaction sees a consistent snapshot of data at the start; prevents dirty and
+        non-repeatable reads, but phantom inserts may occur.
+     4. Serializable — strictest; transactions behave as if executed sequentially; prevents all anomalies but
+        can cause serialization failures that require retrying transactions.
+
+     As a senior engineer, I choose the isolation level based on the consistency vs concurrency tradeoff. For example,
+     financial transactions often use Serializable or Repeatable Read, while reporting queries may use Read Committed
+     for higher throughput.”
+
+  ===========================================================================
+
+                        ===========================================================================
+                        ===========================================================================
+                        ===========================================================================
+
+  ======================================================================================================================
