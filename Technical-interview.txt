@@ -176,6 +176,23 @@
 
    ===========================================================================
 
+4.One-sentence senior-level answer
+
+  “Idempotency ensures that repeated requests have the same effect, which is critical for APIs that may be
+  retried—especially in payments and ordering. I usually implement it using idempotency keys stored in Redis
+  or PostgreSQL, or via DB constraints and UPSERT logic.”
+
+  ===========================================================================
+
+5.Retry Strategies — Short Senior-Level Explanation
+
+“Retry strategies define how we reattempt failed operations in a controlled and safe way. They help handle transient
+ errors—like network timeouts, DB overload, or external API failures—without overwhelming the system.”
+
+  ===========================================================================
+
+
+
 x.RabbitMQ vs Kafka — Short Senior-Level Explanation for Interview
   🔥 High-level difference
 
