@@ -148,10 +148,44 @@
      financial transactions often use Serializable or Repeatable Read, while reporting queries may use Read Committed
      for higher throughput.”
 
-  ===========================================================================
-
-                        ===========================================================================
-                        ===========================================================================
-                        ===========================================================================
-
   ======================================================================================================================
+
+                        ===========================================================================
+                        ============================== Distributed Systems =======================
+                        ===========================================================================
+
+1.Queues — Short Senior-Level Explanation
+
+  “A queue is an asynchronous communication mechanism that decouples producers from consumers. Instead of processing
+  heavy or time-consuming tasks in the request cycle, I push a message into a queue, and background workers consume it
+  independently. This improves performance, fault-tolerance, and system scalability.”
+
+   ===========================================================================
+
+2.Rate Limiting — Short Senior-Level Explanation
+
+  “Rate limiting is a technique to control how many requests a user or client can make within a specific time window.
+   It protects the system from abuse, DoS attacks, brute-force attempts, and ensures fair resource usage.”
+
+   ===========================================================================
+
+3.Idempotency — Short Senior-Level Explanation
+
+  “Idempotency means that performing the same operation multiple times produces the same result. It prevents duplicate
+  side effects, especially in payments, orders, and external API calls.”
+
+   ===========================================================================
+
+x.RabbitMQ vs Kafka — Short Senior-Level Explanation for Interview
+  🔥 High-level difference
+
+  RabbitMQ is a message broker (for real-time tasks). Kafka is a distributed event streaming platform
+  (for high-throughput logs and long-term storage).
+
+  ----------------------------------------------------------
+
+  “I use RabbitMQ when I need reliable message delivery, routing patterns, delayed or priority queues,
+  or when microservices need to offload tasks like emails, notifications, or WebSocket broadcasting.
+  I use Kafka when I need high-throughput event streaming, replayability, and long-term retention—like analytics
+  pipelines, event sourcing, log aggregation, or processing millions of events per second. RabbitMQ is task-oriented;
+  Kafka is event-stream-oriented.”
