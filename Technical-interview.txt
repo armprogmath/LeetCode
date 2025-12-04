@@ -235,4 +235,17 @@ x.RabbitMQ vs Kafka — Short Senior-Level Explanation for Interview
 
 ======================================================================================================================
 
-2.
+2.Interceptors and Pipes
+
+ "Interceptors wrap around the request/response cycle and are great for logging, transformation, caching, and response
+ mapping. Pipes validate and transform incoming data before it reaches the handler. Together they improve structure,
+ consistency, and data integrity across the application."
+
+======================================================================================================================
+
+3.CQRS Pattern
+
+ “CQRS separates writes (commands) from reads (queries). Commands change state and queries only read. It improves
+ performance, scalability, and provides cleaner architecture — especially in high-load or event-driven systems.”
+
+======================================================================================================================
