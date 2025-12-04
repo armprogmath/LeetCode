@@ -219,3 +219,20 @@ x.RabbitMQ vs Kafka — Short Senior-Level Explanation for Interview
   I use Kafka when I need high-throughput event streaming, replayability, and long-term retention—like analytics
   pipelines, event sourcing, log aggregation, or processing millions of events per second. RabbitMQ is task-oriented;
   Kafka is event-stream-oriented.”
+
+
+    ======================================================================================================================
+
+                          ===========================================================================
+                          ============================== Nestjs =======================
+                          ===========================================================================
+
+1.NestJS — Modules, Providers, Guards (Senior-Level Explanation)
+
+  “Modules organize the application into logical components. Providers contain the actual business logic and use
+  dependency injection. Guards run before the route handler and control access — usually for authentication or
+  authorization. Together they help structure scalable, maintainable, and secure NestJS applications.”
+
+======================================================================================================================
+
+2.
