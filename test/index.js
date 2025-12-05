@@ -5,6 +5,7 @@ function sum(...args){
 function curry(fn, arity = fn.length){
     return function curried(...args){
         if(arity && args.length >= arity){
+            console.log()
             return fn.apply(this, args);
         }
         else if(!arity){
@@ -24,4 +25,4 @@ function curry(fn, arity = fn.length){
 }
 
 const myCurry = curry(sum)
-console.log(myCurry(1)(2)(9)())
+console.log(myCurry(1)(2)(9,3)())
