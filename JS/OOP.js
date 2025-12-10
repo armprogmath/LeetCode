@@ -13,5 +13,5 @@ Animal.isAnimal = function (obj) {
 };
 
 const dog = new Animal("dog");
-dog.speak();            // ✅ instance method
+dog.speak();
 console.log(Animal.isAnimal(dog)); // ✅ static method → true
