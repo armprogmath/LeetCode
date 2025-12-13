@@ -32,7 +32,7 @@ This design allows Node.js to perform efficient non-blocking I/O and handle thou
   Using streams with buffers lets Node handle large files, network traffic,
   and real-time data efficiently without blocking the event loop.”
 
-  ============================================================================
+  ===========================================================================
 
   2.Memory Leak Causes — short answer
 
@@ -42,7 +42,7 @@ This design allows Node.js to perform efficient non-blocking I/O and handle thou
     and not handling streams/backpressure causing buffers to grow. In production I monitor heap usage,
     event-loop lag, and use tools like clinic, heap snapshots, and —inspect to detect leaks.”
 
-  ===========================================================================
+  ==========================================================================
 
   3.Performance Optimization — short answer
 
