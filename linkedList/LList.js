@@ -34,6 +34,7 @@ const l2 = buildList([5, 6, 4, 8]);
 
 console.log("l1: ", l1)
 console.log("l2:", l2)
+//console.log("l2:", l1 + l2)
 
 
 
