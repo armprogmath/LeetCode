@@ -1,3 +1,28 @@
+0. Event Loop - short answer
+
+The Event Loop in Node.js is the core mechanism that schedules and executes asynchronous operations.
+It allows Node.js to offload long-running or non-blocking tasks so the main call stack stays free and the application
+remains responsive.
+Node.js uses libuv, which defines the Event Loop's phases. Each phase handles different types of callbacks, for example:
+
+/////////// To List Phases
+
+In addition to the phases, Node.js maintains two priority queues:
+
+Microtask Queue → includes Promises, process.nextTick(), queueMicrotask().
+
+Macrotask Queue → includes timers, I/O callbacks, setImmediate(), etc.
+
+Microtasks always run between every phase and have higher priority.
+Specifically, process.nextTick() has the highest priority and runs even before regular microtasks.
+
+The Event Loop continuously checks whether the call stack is empty; if it is, it takes tasks from the queues according to the rules of the current phase and executes them.
+
+This design allows Node.js to perform efficient non-blocking I/O and handle thousands of concurrent operations on a single thread.
+
+
+============================================================================
+
 1.Streams & Buffers — short answer
 
   “A Buffer in Node.js is a raw binary data container stored outside the V8 heap.
@@ -7,7 +32,7 @@
   Using streams with buffers lets Node handle large files, network traffic,
   and real-time data efficiently without blocking the event loop.”
 
-  ===========================================================================
+  ============================================================================
 
   2.Memory Leak Causes — short answer
 
