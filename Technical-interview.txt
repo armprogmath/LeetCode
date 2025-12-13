@@ -115,7 +115,7 @@ This design allows Node.js to perform efficient non-blocking I/O and handle thou
 
     Proper indexing is critical for performance, query planning, and scaling high-traffic applications.”
 
-  ===========================================================================
+  ============================================================================
 
   8.Query Optimization — short answer
 
@@ -134,7 +134,7 @@ This design allows Node.js to perform efficient non-blocking I/O and handle thou
     In production, I combine indexing, query rewriting, caching, and monitoring to ensure high throughput and low
     latency for PostgreSQL queries.”
 
-  ===========================================================================
+  ============================================================================
 
   9.Transactions — short answer
 
