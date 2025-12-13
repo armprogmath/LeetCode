@@ -2,7 +2,7 @@ function Animal(type) {
   this.type = type;
 }
 
-// instance method
+/// instance method
 Animal.prototype.speak = function () {
   console.log(`The ${this.type} makes a sound`);
 };
