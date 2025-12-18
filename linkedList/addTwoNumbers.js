@@ -50,7 +50,7 @@ function printList(node) {
     console.log(nums.join(' -> '));
 }
 
-const l1 = buildList([2, 4, 3]);
+//const l1 = buildList([2, 4, 3]);
 const l2 = buildList([5, 6, 4]);
 
 const result = addTwoNumbers(l1, l2);
