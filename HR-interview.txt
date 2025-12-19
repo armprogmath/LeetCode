@@ -65,6 +65,11 @@ priority. A stable backend is always more important than new features.
 
 
 
+//Language resource
+https://dictionary.cambridge.org/dictionary/english-russian/obey
+
+
+
 
 
 
