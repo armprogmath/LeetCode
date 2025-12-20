@@ -66,9 +66,9 @@ priority. A stable backend is always more important than new features.
 
 
 //Language resource
-//https://dictionary.cambridge.org/dictionary/english-russian/obey
-//https://test-english.com/grammar-points/b1-b2/questions-different-types/
-https://www.bbc.co.uk/learningenglish/english/features/phrasal_verbs_with_georgie/ep-240920
+https://dictionary.cambridge.org/dictionary/english-russian/obey
+https://test-english.com/grammar-points/b1-b2/questions-different-types/
+//https://www.bbc.co.uk/learningenglish/english/features/phrasal_verbs_with_georgie/ep-240920
 
 
 
