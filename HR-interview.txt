@@ -20,7 +20,7 @@ technical problems, and help the team move faster with clean, maintainable code.
 to your engineering team.
 
 
-//==2.Why are you leaving your current job?
+2.Why are you leaving your current job?
 
 “I’ve learned a lot in my current role, but the project has become stable and I’m no longer facing new technical
 challenges. I’m looking to join a team where I can solve more complex problems, work with modern architecture,
@@ -66,8 +66,8 @@ priority. A stable backend is always more important than new features.
 
 
 //Language resource
-https://dictionary.cambridge.org/dictionary/english-russian/obey
-https://test-english.com/grammar-points/b1-b2/questions-different-types/
+//https://dictionary.cambridge.org/dictionary/english-russian/obey
+//https://test-english.com/grammar-points/b1-b2/questions-different-types/
 //https://www.bbc.co.uk/learningenglish/english/features/phrasal_verbs_with_georgie/ep-240920
 
 
