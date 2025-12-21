@@ -1,4 +1,4 @@
-0.Tell me about your self
+//==0.Tell me about your self
 
 “I'm a Senior Software Engineer with solid experience in backend engineering, mainly using Node.js, NestJS,
 PostgreSQL, RabbitMQ, Redis, ElasticSearch and Firebase.I’ve built and scaled multiple systems from scratch — including
@@ -20,13 +20,13 @@ technical problems, and help the team move faster with clean, maintainable code.
 to your engineering team.
 
 
-//==2.Why are you leaving your current job?
+2.Why are you leaving your current job?
 
 “I’ve learned a lot in my current role, but the project has become stable and I’m no longer facing new technical
 challenges. I’m looking to join a team where I can solve more complex problems, work with modern architecture,
 and continue to grow as a senior engineer.”
 
-//==3.What motivates you?
+3.What motivates you?
 
 I'm motivated by solving complex problems, delivering production-quality features, and continuously improving my skills.
  I enjoy seeing my work make a real impact on the product and the team.
@@ -39,7 +39,7 @@ and making sure communication with the team is transparent. This helps me make t
 sacrificing stability or quality.
 
 
-//==5.Tell me about a conflict in your team and how you handled it.
+5.Tell me about a conflict in your team and how you handled it.
 
 In one of my previous projects, we had a conflict between two backend developers regarding the architectural approach
 for a new microservice. One wanted to use a fully event-driven pattern with RabbitMQ, while the other preferred
