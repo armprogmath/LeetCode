@@ -1,4 +1,4 @@
-//==0.Tell me about your self
+0.Tell me about your self
 
 “I'm a Senior Software Engineer with solid experience in backend engineering, mainly using Node.js, NestJS,
 PostgreSQL, RabbitMQ, Redis, ElasticSearch and Firebase.I’ve built and scaled multiple systems from scratch — including
@@ -20,7 +20,7 @@ technical problems, and help the team move faster with clean, maintainable code.
 to your engineering team.
 
 
-2.Why are you leaving your current job?
+//==2.Why are you leaving your current job?
 
 “I’ve learned a lot in my current role, but the project has become stable and I’m no longer facing new technical
 challenges. I’m looking to join a team where I can solve more complex problems, work with modern architecture,
