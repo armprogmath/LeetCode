@@ -1,4 +1,4 @@
-//0.Tell me about your self
+0.Tell me about your self
 
 “I'm a Senior Software Engineer with solid experience in backend engineering, mainly using Node.js, NestJS,
 PostgreSQL, RabbitMQ, Redis, ElasticSearch and Firebase.I’ve built and scaled multiple systems from scratch — including
@@ -9,7 +9,7 @@ developers.In my next role, I’m looking for a place where I can contribute my 
 and help build reliable,scalable, production-ready platforms.”
 
 
-//1.Why should we hire you? — Strong Senior Engineer Answer
+1.Why should we hire you? — Strong Senior Engineer Answer
 
 Shorter Version (for HR round)
 
@@ -39,7 +39,7 @@ and making sure communication with the team is transparent. This helps me make t
 sacrificing stability or quality.
 
 
-5.Tell me about a conflict in your team and how you handled it.
+//5.Tell me about a conflict in your team and how you handled it.
 
 In one of my previous projects, we had a conflict between two backend developers regarding the architectural approach
 for a new microservice. One wanted to use a fully event-driven pattern with RabbitMQ, while the other preferred
@@ -55,7 +55,7 @@ requirements didn’t justify the added complexity. So we agreed to start with a
 to extend to RabbitMQ events later as the system grows.
 
 
-6.How do you prioritize tasks?
+//6.How do you prioritize tasks?
 
 As a backend engineer, I prioritize tasks using a mix of business impact, system dependencies, and technical
 complexity. My approach looks like this:
@@ -66,9 +66,9 @@ priority. A stable backend is always more important than new features.
 
 
 //Language resource
-//https://dictionary.cambridge.org/dictionary/english-russian/obey
-//://test-english.com/grammar-points/b1-b2/questions-different-types/
-//https://www.bbc.co.uk/learningenglish/english/features/phrasal_verbs_with_georgie/ep-240920
+https://dictionary.cambridge.org/dictionary/english-russian/obey
+test-english.com/grammar-points/b1-b2/questions-different-types/
+https://www.bbc.co.uk/learningenglish/english/features/phrasal_verbs_with_georgie/ep-240920
 
 
 
