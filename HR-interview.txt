@@ -75,6 +75,56 @@ https://www.bbc.co.uk/learningenglish/english/features/phrasal_verbs_with_georgi
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+If we look at the task description, there were clear core requirements as well as several nice-to-have points.
+I focused on fully implementing all mandatory requirements and designing the solution in a way that is easy to
+scale and ready for future growth.
+
+For this reason, I chose a microservices architecture to demonstrate how the solution could evolve into a larger,
+enterprise-level system. Communication between microservices is handled via RabbitMQ as a message broker,
+which provides a solid foundation for introducing more advanced patterns in the future, such as the Saga pattern
+or different orchestration and choreography approaches.
+
+All APIs are documented using Swagger, enabling frontend and mobile teams to integrate quickly and efficiently.
+To address rate limiting and protect the system under load, I implemented request throttling using the Throttler module.
+
+Overall, my focus was not only on delivering functionality, but also on building the right infrastructure: clean
+deployment processes, clear separation between development and production environments, and a stable, scalable
+foundation that supports long-term evolution of the system.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+If we look at the task description, it clearly defines a list of core requirements along with several “nice-to-have”
+ items. My goal was to implement all mandatory requirements and, where reasonable, cover most of the optional
+  ones as well.
+
+To demonstrate that the solution is designed for scalability, I chose a microservices architecture from the start.
+ This approach allows the system to grow independently across different domains and makes future scaling and
+ maintenance significantly easier.
+
+Communication between microservices is implemented using RabbitMQ as a message broker, enabling asynchronous,
+decoupled interactions. This foundation also allows the system to evolve further—for example, by introducing
+the SAGA pattern for distributed transactions or other architectural patterns as the platform grows.
+
+For API documentation, I integrated Swagger, which greatly improves collaboration with frontend and mobile teams by
+providing clear, self-describing endpoints and reducing integration friction.
+
+To address traffic control and abuse prevention, I added rate limiting using the Throttler module, ensuring
+predictable system behavior under load.
+
+From a purely functional standpoint, the core problem itself was relatively straightforward to implement,
+so there is limited value in focusing on basic business logic. Instead, I believe the more meaningful part to
+review is the database design, which, while not complex, was structured to support clarity, consistency,
+nd future extensibility.
+
+Overall, my focus was not only on completing the task, but on building a stable, maintainable,
+and developer-friendly infrastructure. The solution is structured in a way that improves development efficiency
+and allows environments such as development and production to be separated with minimal overhead.
+
+
+
 
 
 
