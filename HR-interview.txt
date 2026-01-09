@@ -9,7 +9,7 @@ developers.In my next role, I’m looking for a place where I can contribute my 
 and help build reliable,scalable, production-ready platforms.”
 
 
-1.Why should we hire you? — Strong Senior Engineer Answer
+//1.Why should we hire you? — Strong Senior Engineer Answer
 
 Shorter Version (for HR round)
 
@@ -20,7 +20,7 @@ technical problems, and help the team move faster with clean, maintainable code.
 to your engineering team.
 
 
-2.Why are you leaving your current job?
+//2.Why are you leaving your current job?
 
 “I’ve learned a lot in my current role, but the project has become stable and I’m no longer facing new technical
 challenges. I’m looking to join a team where I can solve more complex problems, work with modern architecture,
