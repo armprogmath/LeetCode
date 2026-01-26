@@ -1,4 +1,4 @@
-0.Tell me about your self
+//0.Tell me about your self
 
 “I'm a Senior Software Engineer with solid experience in backend engineering, mainly using Node.js, NestJS,
 PostgreSQL, RabbitMQ, Redis, ElasticSearch and Firebase.I’ve built and scaled multiple systems from scratch — including
