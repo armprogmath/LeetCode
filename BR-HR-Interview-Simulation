@@ -1,0 +1,55 @@
+1.Tell me about yourself and your professional background.
+Answer:
+    I'm a Senior Software Engineer with solid experience in backend engineering, mainly using Node.js, NestJS,
+    PostgreSQL, RabbitMQ, Redis, ElasticSearch and Firebase.I’ve built and scaled multiple systems from
+    scratch — including microservice architectures, payment processing systems, high-load event engines,
+    real-time applications withWebSockets, and queue-based distributed systems. I enjoy designing clean
+    architectures, solving complex backend problems, improving performance, and mentoring other developers.
+    In my next role, I’m looking for a place where I can contribute my experience, take ownership, and help
+    build reliable,scalable, production-ready platforms.
+
+
+2.Why are you interested in BrainRocket, and what do you know about our company?
+Answer:
+    I first learned about BrainRocket through LinkedIn and recommendations within my professional network. Since then,
+    I’ve taken time to research the company in more detail.I understand that BrainRocket is a leading product-focused
+    company in the iGaming industry, building high-load, user-facing platforms with strong emphasis on performance,
+    scalability, and engineering quality.
+    What especially attracts me is the scale of your systems and the focus on building long-term products rather than
+    short-term projects. This aligns well with my experience in backend architecture, high-load systems,
+    and ownership-driven development.I’m interested in BrainRocket because it offers complex technical
+    challenges and an environment where senior engineers can make real impact on core products.
+
+
+3.Why are you considering leaving your current job (or why did you leave your last one)?
+Answer:
+    In my current role, I have gained a lot of valuable experience; but, the project has reached a stable stage, and
+    the number of new technical challenges has significantly decreased.
+    I am looking to join a team where I can work on more complex engineering problems, engage with modern architectures,
+    and continue to grow professionally as a senior engineer.
+
+
+
+4.What are your key strengths as an engineer, and how do they help your team or product?
+Answer:
+    One of my key strengths is system design and backend architecture. I’m experienced in designing scalable, maintainable
+    services with NestJS and event-driven patterns, and I always think about long-term performance, reliability, and ease
+    of maintenance.I take ownership of complex tasks from design to production, including technical decisions,
+    risk assessment, and performance optimization. I also collaborate closely with frontend, product, and DevOps teams
+    to ensure solutions meet both technical and business goals.This approach helps teams move faster, reduce technical
+    debt, and build systems that scale confidently as the product grows.
+
+
+5.What are your weaknesses, or areas you’re actively working to improve?
+Answer:
+    Sometimes I spend too much time optimizing and refining code to perfection. Over time, I’ve learned to balance this
+    with business priorities and delivery deadlines to avoid slowing down progress.
+
+
+6.How do you handle conflict or disagreement within a team, especially around technical decisions?
+Answer:
+    In a previous project, two developers disagreed on the architecture for a new microservice.
+    One wanted a fully event-driven approach, the other preferred a simpler REST-based design.
+    I organized a quick discussion so everyone could explain their reasoning objectively.
+    We decided to start with REST to meet current needs, with the option to migrate to events later.
+    This kept the project moving and the team aligned.
