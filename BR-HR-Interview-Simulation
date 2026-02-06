@@ -6,7 +6,7 @@ Answer:
     I'm a Senior Software Engineer with solid experience in backend engineering, mainly using Node.js, NestJS,
     PostgreSQL, RabbitMQ, Redis, ElasticSearch and Firebase.I’ve built and scaled multiple systems from
     scratch — including microservice architectures, payment processing systems, high-load event engines,
-    real-time applications withWebSockets, and queue-based distributed systems. I enjoy designing clean
+    real-time applications with WebSockets, and queue-based distributed systems. I enjoy designing clean
     architectures, solving complex backend problems, improving performance, and mentoring other developers.
     In my next role, I’m looking for a place where I can contribute my experience, take ownership, and help
     build reliable,scalable, production-ready platforms.
@@ -35,12 +35,10 @@ Answer:
 
 4.What are your key strengths as an engineer, and how do they help your team or product?
 Answer:
-    One of my key strengths is system design and backend architecture. I’m experienced in designing scalable, maintainable
-    services with NestJS and event-driven patterns, and I always think about long-term performance, reliability, and ease
-    of maintenance.I take ownership of complex tasks from design to production, including technical decisions,
-    risk assessment, and performance optimization. I also collaborate closely with frontend, product, and DevOps teams
-    to ensure solutions meet both technical and business goals.This approach helps teams move faster, reduce technical
-    debt, and build systems that scale confidently as the product grows.
+    One of my main strengths is backend architecture and system design. I build scalable and maintainable
+    NestJS services with a focus on long-term performance and reliability. I take ownership from design to
+    production and collaborate closely with frontend, product, and DevOps teams to deliver solutions that
+    scale as the product grows.
 
 
 5.What are your weaknesses, or areas you’re actively working to improve?
