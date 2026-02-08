@@ -13,7 +13,7 @@ Answer:
 
 
 2.Why are you interested in BrainRocket, and what do you know about our company?
-Answer:
+Answer: BrainRocket
     I first learned about BrainRocket through LinkedIn and recommendations within my professional network. Since then,
     I’ve taken time to research the company in more detail.I understand that BrainRocket is a leading product-focused
     company in the iGaming industry, building high-load, user-facing platforms with strong emphasis on performance,
@@ -22,6 +22,16 @@ Answer:
     short-term projects. This aligns well with my experience in backend architecture, high-load systems,
     and ownership-driven development.I’m interested in BrainRocket because it offers complex technical
     challenges and an environment where senior engineers can make real impact on core products.
+
+
+Answer: Adobe
+   I’ve known Adobe through its products and engineering reputation, and after learning more about the company,
+   it really stood out to me. Adobe builds large-scale products used by millions, while still putting a lot of
+   emphasis on engineering quality.
+
+   What attracts me most is the focus on long-term product development and ownership. That fits well with my
+   background in backend architecture and high-load systems, and it feels like a place where senior engineers
+   can make a real impact.
 
 
 3.Why are you considering leaving your current job (or why did you leave your last one)?
@@ -35,10 +45,12 @@ Answer:
 
 4.What are your key strengths as an engineer, and how do they help your team or product?
 Answer:
-    One of my main strengths is backend architecture and system design. I build scalable and maintainable
-    NestJS services with a focus on long-term performance and reliability. I take ownership from design to
-    production and collaborate closely with frontend, product, and DevOps teams to deliver solutions that
-    scale as the product grows.
+    One of my key strengths is system design and backend architecture. I’m experienced in designing scalable, maintainable
+    services with NestJS and event-driven patterns, and I always think about long-term performance, reliability, and ease
+    of maintenance.I take ownership of complex tasks from design to production, including technical decisions,
+    risk assessment, and performance optimization. I also collaborate closely with frontend, product, and DevOps teams
+    to ensure solutions meet both technical and business goals.This approach helps teams move faster, reduce technical
+    debt, and build systems that scale confidently as the product grows.
 
 
 5.What are your weaknesses, or areas you’re actively working to improve?
@@ -47,10 +59,41 @@ Answer:
     with business priorities and delivery deadlines to avoid slowing down progress.
 
 
-6.How do you handle conflict or disagreement within a team, especially around technical decisions?
+
+
+6.Can you tell me about a challenging situation at work — either a technical or team-related
+challenge — and how you handled it?
+Answer:
+    One challenge I handled was a backend system that started hitting performance issues as traffic grew.
+    I took ownership by analyzing bottlenecks across the database, queues, and service communication,
+    and worked with the team to improve the architecture.
+
+    We introduced better queue handling, caching, and clearer service boundaries, and coordinated closely with
+    product and frontend teams during rollout. As a result, system stability and performance improved
+    significantly, and we built a stronger foundation for future growth.
+
+
+
+7.Can you tell me about a time when you “hacked the system” or found a creative way to solve a problem at work?
+Answer:
+    In a high-load system, we were struggling to process all events in real-time. Instead of just adding
+    more servers, I introduced a smart queuing system to prioritize critical events and batch the rest.
+    This cut load by 40% and improved response times, solving the problem efficiently without extra infrastructure.
+
+
+
+8.How do you handle conflict or disagreement within a team, especially around technical decisions?
 Answer:
     In a previous project, two developers disagreed on the architecture for a new microservice.
     One wanted a fully event-driven approach, the other preferred a simpler REST-based design.
     I organized a quick discussion so everyone could explain their reasoning objectively.
     We decided to start with REST to meet current needs, with the option to migrate to events later.
     This kept the project moving and the team aligned.
+
+
+
+9.Where do you see yourself in the next 2–3 years, and how does Adobe fit into that vision?
+Answer:
+    In 2–3 years, I see myself owning complex backend systems, helping shape architecture, and mentoring others.
+    Adobe is a great fit because it values ownership, scale, and impact — exactly the kind of environment where
+    I can grow and contribute.
