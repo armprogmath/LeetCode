@@ -19,7 +19,7 @@ const myCurry = curry(sum)
 
 
 console.log(myCurry(1, 2, 4)())
-//console.log(myCurry(1)(2)(3)())
+console.log(myCurry(1)(2)(3)())
 
 function curry(fn, arity = fn.length) {
     return function curried(...args) {
