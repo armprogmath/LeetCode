@@ -7,7 +7,7 @@ function memo(fn) {
     const key = stringify(args);
     //console.log("KEY: ", key, "args: " + JSON.stringify(args));
     if (cache.has(key)) {
-      //console.log('Fetching from cache for:', args);
+      console.log('Fetching from cache for:', args);
       return cache.get(key);
     }
     console.log('Calculating result for:', args);
