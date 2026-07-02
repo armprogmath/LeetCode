@@ -10,7 +10,7 @@ function memo(fn) {
       console.log('Fetching from cache for:', args);
       return cache.get(key);
     }
-      //console.log('Calculating result for:', args);
+      console.log('Calculating result for:', args);
     const result = fn(...args);
     cache.set(key, result);
     return result;
